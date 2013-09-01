@@ -1,5 +1,6 @@
 RespectTheWeekend::Application.routes.draw do
 
-  resources :events
+  root :to => 'events#index'
 
+  resources :events
 end 
