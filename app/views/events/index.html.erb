@@ -1,0 +1,14 @@
+<h1>welcome to the home page</h1>
+
+<a href="/events/new">create an event</a>
+<a href="/tags/index">search tags</a>
+<br>
+<br>
+<br>
+<br>
+
+ <% if @events %> 
+ 	<% @events.each do |event| %>
+ 	<div class="event"><%= event.eventname %></div>
+ <% end %>
+ <% end %>
