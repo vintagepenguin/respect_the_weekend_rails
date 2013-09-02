@@ -1,6 +1,6 @@
 class Tag < ActiveRecord::Base 
 	attr_accessible :name 
 
-	has_many :event_tags
-	has_many :events, through: :event_tags
+	has_many :eventtags
+	has_many :events, through: :eventtags
 end 
