@@ -1,0 +1,8 @@
+<h2>welcome to the tags page</h2>
+
+
+	<% if @tags  %>
+	<% @tags.each do |tag| %>
+	  <div class="tag-box"><%= tag.name %></div>
+   	<% end %>
+	<% end  %>
