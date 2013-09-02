@@ -3,6 +3,12 @@ class Event < ActiveRecord::Base
 
 	has_many :eventtags
 	has_many :tags, through: :eventtags
+
+	def shove(list)
+		list.each do |element|
+			self.tags << element
+		end
+	end
 end 
 
 

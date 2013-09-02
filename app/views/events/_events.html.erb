@@ -1,11 +1,12 @@
 
 <%= form_for @event do |f| %>
   <p><%= f.text_field :eventname, placeholder: 'Name', autofocus: true %></p>
-  <p>	<%= f.text_field :location, placeholder: 'Location' %></p>
+  <p><%= f.text_field :location, placeholder: 'Location' %></p>
   <p><%= f.text_field :price, placeholder: 'Price' %></p>
   <p><%= f.url_field  :url, placeholder: 'Link to event' %></p>
   <p><%= f.text_field :start_time, placeholder: 'Time' %></p>
   <p><%= f.text_field :start_date, placeholder: 'Date' %></p>
+  <p><%= f.text_field :tags, placeholder: 'Tags (separate with comma)'%></p>
 	<%= f.submit 'Submit', class: 'button' %>	
 <% end  %>
 
